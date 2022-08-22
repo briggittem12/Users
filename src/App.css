@@ -15,7 +15,6 @@
 body {
     margin: 0;
     min-width: 320px;
-    min-height: 100vh;
     font-family: var(--text);
     font-size: 14px;
 }
@@ -102,3 +101,8 @@ span {
     
 }
 
+@media (min-width: 600px){
+    .principal__card {
+        width: 50%;
+    }
+}
