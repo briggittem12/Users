@@ -44,9 +44,15 @@
 }
 input {
     outline: none;
-    width: 80%;
-    border: 1px solid var(--color-button);
+    border: none;
+    border-bottom: 2px solid rgb(0, 255, 179);
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+
 }
+
 .form__btn {
     display: block;
     padding: 8px 12px;
