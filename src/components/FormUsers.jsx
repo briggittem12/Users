@@ -25,13 +25,16 @@ const FormUsers = ({getUsers, upgradeUser, setUpgradeUser, closeUser}) => {
 
   let newUsers = data => {
     let URL = 'https://users-crud1.herokuapp.com/users/'
+    //console.log(data)
     axios.post(URL, data)
+    
       .then(res => {
       console.log(res.data)
       getUsers()
   }) 
   .catch(err => console.log(err))  
 }
+
 
 
   // Update info from the API 
@@ -93,5 +96,4 @@ const FormUsers = ({getUsers, upgradeUser, setUpgradeUser, closeUser}) => {
   )
 }
 
-export default FormUsers
-
+export default FormUsers 
